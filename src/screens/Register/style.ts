@@ -1,8 +1,8 @@
 import { StyleSheet } from "react-native";
 
 const style = {
-    bg_primary: "#F3F4F3",
-    bg_secondary: "#FFF",
+    bg_primary: "#FFF",
+    bg_secondary: "#EFEFEF",
     text_primary: "#7B01FF",
     text_secondary: "#000",
     border_primary: "#222",
@@ -25,7 +25,8 @@ export const styles = StyleSheet.create({
         maxWidth: "90%",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: style.bg_secondary,
+        borderWidth: 3,
+        borderColor: style.bg_secondary,
         padding: 16,
         borderRadius: 8,
     },
