@@ -25,9 +25,6 @@ export default function Login({ onSwitch }: { onSwitch: () => void }) {
                 });
 
                 const data = response.data;
-
-                console.log("Resposta da API:", data);
-
                 await AsyncStorage.setItem('token', data.token);
 
                 login(data.token, data.user);
