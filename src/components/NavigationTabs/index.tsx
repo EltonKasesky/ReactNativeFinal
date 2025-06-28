@@ -22,15 +22,6 @@ export default function NavigationTabs() {
             }}
         >
             <Tab.Screen
-                name="Séries"
-                component={DiscoverTV}
-                options={{
-                    tabBarIcon: ({ color }) => (
-                        <FontAwesome name="tv" size={20} color={color} />
-                    ),
-                }}
-            />
-            <Tab.Screen
                 name="Filmes"
                 component={DiscoverMovies}
                 options={{
@@ -39,6 +30,17 @@ export default function NavigationTabs() {
                     ),
                 }}
             />
+            
+            <Tab.Screen
+                name="Séries"
+                component={DiscoverTV}
+                options={{
+                    tabBarIcon: ({ color }) => (
+                        <FontAwesome name="tv" size={20} color={color} />
+                    ),
+                }}
+            />
+
             <Tab.Screen
                 name="Quem somos"
                 component={QuemSomos}
