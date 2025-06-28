@@ -5,6 +5,8 @@ import QuemSomos from "../../screens/QuemSomos";
 import AuthSwitcher from "../AuthSwitcher";
 import LogoutHandler from "../LogoutHandler";
 import { FontAwesome } from "@expo/vector-icons";
+import DiscoverTV from "../../screens/API";
+import DiscoverMovies from "../../screens/API/index2";
 
 const Tab = createBottomTabNavigator();
 
@@ -19,6 +21,24 @@ export default function NavigationTabs() {
                 tabBarShowLabel: true,
             }}
         >
+            <Tab.Screen
+                name="Séries"
+                component={DiscoverTV}
+                options={{
+                    tabBarIcon: ({ color }) => (
+                        <FontAwesome name="tv" size={20} color={color} />
+                    ),
+                }}
+            />
+            <Tab.Screen
+                name="Filmes"
+                component={DiscoverMovies}
+                options={{
+                    tabBarIcon: ({ color }) => (
+                        <FontAwesome name="film" size={20} color={color} />
+                    ),
+                }}
+            />
             <Tab.Screen
                 name="Quem somos"
                 component={QuemSomos}
