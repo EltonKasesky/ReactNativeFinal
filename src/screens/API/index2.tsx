@@ -29,8 +29,8 @@ const DiscoverMovies = () => {
   if (error) return <Text>Error: {error}</Text>;
 
   return (
-    <ScrollView>
-      <Text style={styles.title}>Movies</Text>
+    <ScrollView style={styles.container}>
+      <Text style={styles.title}>Filmes</Text>
       {movies.map((movie) => (
         <View key={movie.id} style={styles.item}>
           {movie.poster_path ? (
@@ -55,6 +55,7 @@ const DiscoverMovies = () => {
 };
 
 const styles = StyleSheet.create({
+  container: {backgroundColor: "#fff"},
   title: { fontSize: 24, fontWeight: "bold", marginBottom: 16, textAlign: "center" },
   item: { marginBottom: 20, paddingHorizontal: 16, alignItems: "center" },
   name: { fontSize: 18, fontWeight: "bold", marginTop: 8 },

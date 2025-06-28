@@ -29,8 +29,8 @@ const DiscoverTV = () => {
   if (error) return <Text>Error: {error}</Text>;
 
   return (
-    <ScrollView>
-      <Text style={styles.title}>TV Shows</Text>
+    <ScrollView style={styles.container}>
+      <Text style={styles.title}>Series</Text>
       {shows.map((show) => (
         <View key={show.id} style={styles.item}>
           {show.poster_path ? (
@@ -55,6 +55,7 @@ const DiscoverTV = () => {
 };
 
 const styles = StyleSheet.create({
+  container: {backgroundColor: "#fff"},
   title: { fontSize: 24, fontWeight: "bold", marginBottom: 16, textAlign: "center" },
   item: { marginBottom: 20, paddingHorizontal: 16, alignItems: "center" },
   name: { fontSize: 18, fontWeight: "bold", marginTop: 8 },
