@@ -49,7 +49,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Drawer.Navigator
-        initialRouteName="Discover TV"
+        initialRouteName="TV Shows"
         screenOptions={{
           headerStyle: { backgroundColor: "#1a1a1a" },
           headerTintColor: "#bfa14a",
