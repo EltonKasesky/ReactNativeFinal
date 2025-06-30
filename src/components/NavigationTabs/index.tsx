@@ -1,4 +1,4 @@
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import QuemSomos from "../../screens/QuemSomos";
@@ -8,17 +8,19 @@ import { FontAwesome } from "@expo/vector-icons";
 import DiscoverTV from "../../screens/API";
 import DiscoverMovies from "../../screens/API/index2";
 
-const Tab = createBottomTabNavigator();
+const Tab = createMaterialTopTabNavigator();
 
 export default function NavigationTabs() {
     const { isAuthenticated } = useContext(AuthContext);
 
     return (
         <Tab.Navigator
+            tabBarPosition="bottom"
             screenOptions={{
-                headerShown: false,
                 tabBarActiveTintColor: "#7B01FF",
                 tabBarShowLabel: true,
+                tabBarIndicatorStyle: { backgroundColor: "#7B01FF" },
+                swipeEnabled: true,
             }}
         >
             <Tab.Screen
