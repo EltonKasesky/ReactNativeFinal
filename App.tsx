@@ -64,11 +64,10 @@ export default function App() {
                         <Stack.Navigator
                             screenOptions={{
                                 headerShown: false,
-                                cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS, // animação de transição
+                                cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
                             }}
                         >
                             <Stack.Screen name="Tabs" component={NavigationTabs} />
-                            {/* Adicione outras telas aqui, se necessário */}
                         </Stack.Navigator>
                     </NavigationContainer>
                 </SafeAreaView>
@@ -106,3 +105,4 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
     },
 });
+
