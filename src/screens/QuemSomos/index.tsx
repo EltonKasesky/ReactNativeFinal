@@ -8,6 +8,7 @@ import {
   Image,
 } from "react-native";
 import React from "react";
+import Contato from "../Contato";
 
 export default function QuemSomos() {
   const colaboradores = [
@@ -91,6 +92,8 @@ export default function QuemSomos() {
           </TouchableOpacity>
         ))}
       </View>
+
+      <Contato/>
     </ScrollView>
   );
 }
@@ -104,6 +107,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 15,
+    color: "#7B01FF"
   },
   text: {
     textAlign: "justify",

@@ -56,7 +56,7 @@ const DiscoverMovies = () => {
 
 const styles = StyleSheet.create({
   container: {backgroundColor: "#fff"},
-  title: { fontSize: 24, fontWeight: "bold", marginBottom: 16, textAlign: "center" },
+  title: { fontSize: 24, fontWeight: "bold", marginBottom: 16, textAlign: "center", color: "#7B01FF" },
   item: { marginBottom: 20, paddingHorizontal: 16, alignItems: "center" },
   name: { fontSize: 18, fontWeight: "bold", marginTop: 8 },
   overview: { fontSize: 14, color: "#333", marginTop: 4 },
